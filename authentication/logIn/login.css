@@ -1,0 +1,76 @@
+@import url(/css/base.css);
+@import url(/home/home-page.css);
+
+body{
+    background-color: var(--most-lightest-gray);
+}
+
+/* logIn starts here */
+.ap_auth-page-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.ap_auth-container{
+    background-color: var(--white-color);
+    padding: 1rem;
+    width: 20rem;
+}
+.ap_auth-container h4{
+    font-weight: bolder;
+    font-size: large;
+}
+.ap_auth-inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.ap_auth-inputs label{
+    font-size: 0.8rem;
+    margin: 1rem 0rem 0.1rem 0rem;
+}
+.ap_auth-inputs input{
+    border: 1px solid var(--medium-gray);
+    padding: 0.3rem 0.5rem;
+    outline: none;
+}
+.ap_auth-other-options{
+    display: flex;
+    justify-content: space-between;
+}
+.ap_auth-remember-label{
+    align-items: center;
+    display: flex;
+    gap: 0.3rem;
+}
+.ap_auth-remember-label input:hover{
+    cursor: pointer;
+}
+.ap_auth-forgot p{
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.ap_auth-forgot a{
+    color: var(--light-blue);
+    text-decoration: none;
+}
+.ap_auth-action-btns{
+    align-items: center;
+    display:flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.ap_auth-action-btns button{
+    background-color: var(--light-blue);
+    width: 100%;
+}
+.ap_auth-action-btns a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.ap_new-account p{
+    color: var(--black); 
+    font-size: 0.8rem;
+}
+/* logIn ends here */
