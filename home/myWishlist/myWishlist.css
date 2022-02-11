@@ -1,0 +1,28 @@
+@import url(/home/home-page.css);
+@import url(/css/base.css);
+@import url(/home/product-listing/product-listinng.css);
+
+body{
+    background-color: var(--most-lightest-gray);
+}
+
+/* mywishlist start here */
+.ap_my-wishlist-container{
+    height: 40rem;
+    overflow-y: scroll;
+}
+.ap_my-wishlist-container h3{
+    margin: 1rem 0rem;
+}
+.ap_my-wishlist-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+}
+.card-w-badge-type1 i{
+    color: var(--red);
+}
+/* mywishlist end here */
