@@ -1,0 +1,65 @@
+@import url(/css/base.css);
+
+/* landing page starts here */
+.ap_landing-page-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+/* landing page first section starts here */
+.ap_landing-page-first-section{
+   background-image: url(/images/landing-page-first-secction.jpg);
+   display: flex;
+   flex-direction: column;
+   height: 50rem;
+   gap: 15rem;
+   background-size: cover;
+   background-position: top;
+   width: 100%;
+}
+.ap_landing-page-header{
+    align-items: center;
+    display: flex;
+    height: 7rem;
+    justify-content: space-around;
+}
+.ap_landing-page-logo img{
+    border-radius: 50%;
+}
+.ap_landing-page-navigation a{
+    color: var(--white-color);
+    text-decoration: none;
+    position: relative;
+}
+.ap_landing-page-navigation a:hover{
+    cursor: pointer;
+    font-size: large;
+    color: var(--lightest-gray);
+    transition: 1s;
+}
+.ap_landing-page-navigation{
+    display: flex;
+    font-size: medium;
+    gap: 2rem;
+}
+.ap_landing-page-cart-icon i{
+    color: var(--lightest-gray);
+    font-size: 1.5rem;
+}
+.ap_landing-page-cart-icon i:hover{
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: 1s;
+}
+.ap_landing-page-get-started{
+    display: flex;
+    justify-content: center;
+}
+.ap_landing-page-get-started button{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    border-radius: 1rem;
+}
+/* landing page first section ends here */
+/* landing page ends here */
