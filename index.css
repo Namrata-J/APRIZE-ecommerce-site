@@ -8,7 +8,7 @@
 }
 /* landing page first section starts here */
 .ap_landing-page-first-section{
-   background-image: url(/images/landing-page-first-secction.jpg);
+   background-image: url(/images/landing-page-first-section.jpg);
    display: flex;
    flex-direction: column;
    height: 50rem;
