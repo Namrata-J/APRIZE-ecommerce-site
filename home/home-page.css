@@ -1,0 +1,94 @@
+@import url(/css/base.css);
+
+/* home page starts here */
+.ap_home-page-header{
+    background-color: var(--white-color);
+    align-items: center;
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+}
+.ap_search {
+    border: 1px solid var(--lightest-gray);
+    padding: 0.3rem;
+    outline: none;
+    width: 15rem;
+}
+.et_link-btn{
+    background-color: var(--lightest-gray);
+}
+.ap_action-buttons{
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+.et_badges-on-icons-container i{
+    font-size: 1.5rem;
+}
+.et_badges-on-icons-container a{
+    color: var(--lightest-gray);
+    text-decoration: none;
+}
+
+.ap_home-page-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 4rem;
+}
+.ap_all-products-display{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.ap_product-display{
+    position: relative;
+}
+.ap_product-description{
+    background-color: var(--white-color);
+    font-size: small;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+}
+.ap_second-section{
+    margin: 3rem 0rem;
+    width: 100%;
+}
+.ap_second-section img{
+    width: 100%;
+}
+.ap_third-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ap_new-arrivals{
+    background-color: var(--white-color);
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 47%;
+}
+.ap_new-arrival-heading{
+    font-size: larger;
+}
+.ap_new-arrival-description{
+    font-size: small;
+}
+.ap_new-arrival-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ap_new-arrival-subheading{
+    font-size: x-small;
+}
+/* home page ends here */

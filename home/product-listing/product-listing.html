@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://expeditech-ui.netlify.app/components/index.css">
+    <link rel="stylesheet" href="https://expeditech-ui.netlify.app/style.css">
+    <link rel="stylesheet" href="/home/product-listing/product-listing.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Products | APRIZE</title>
+</head>
+
+<body>
+    <!-- product-listing page starts here -->
+    <header class="ap_home-page-header">
+        <h4>APRIZE</h4>
+        <div class="ap_search-bar">
+            <input type="text" class="ap_search b-rad1" placeholder="search...">
+        </div>
+        <div class="ap_action-buttons">
+            <a href="/authentication/logIn/login.html"><button class="et_link-btn primary-color btn">Login</button></a>
+
+            <div class="et_badges-on-icons-container">
+                <a href="/home/myWishlist/myWishlist.html"><i class="far fa-heart fw-1"></i></a>
+                <span class="b-rad4">5</span>
+            </div>
+
+            <div class="et_badges-on-icons-container">
+                <a href="/home/myCart/myCart.html"><i class="fas fa-shopping-cart"></i></a>
+                <span class="b-rad4">5</span>
+            </div>
+        </div>
+    </header>
+    <div class="ap_main-section">
+        <!-- main section sidebar starts here -->
+        <div class="ap_main-section-sidebar">
+            <form class="ap_filter-section">
+                <div class="ap_filter-by-price">
+                    <h4>Price</h4>
+                    <label for="price1"><input type="radio" id="price1" name="filter-price" value="below 500">below
+                        500</label>
+                    <label for="price2"><input type="radio" id="price2" name="filter-price" value="below 1000">below
+                        1000</label>
+                    <label for="price3"><input type="radio" id="price3" name="filter-price" value="below 1500">below
+                        1500</label>
+                    <label for="price4"><input type="radio" id="price4" name="filter-price" value="above 2000">above
+                        2000</label>
+                </div>
+                <div class="ap_filter-by-category">
+                    <h4>Category</h4>
+                    <label for="category1"><input type="checkbox" id="category1" name="filter-category"
+                            value="Mens clothing">Mens clothing</label>
+                    <label for="category2"><input type="checkbox" id="category2" name="filter-category"
+                            value="Womens clothing">Womens clothing</label>
+                    <label for="category3"><input type="checkbox" id="category3" name="filter-category"
+                            value="Kids clothing">Kids clothing</label>
+                </div>
+                <div class="ap_filter-by-rating">
+                    <h4>Rating</h4>
+                    <label for="rating1"><input type="radio" id="rating1" name="filter-rating" value="4 stars & above">4
+                        stars & above</label>
+                    <label for="rating2"><input type="radio" id="rating2" name="filter-rating" value="3 stars & above">3
+                        stars & above</label>
+                    <label for="rating3"><input type="radio" id="rating3" name="filter-rating" value="2 stars & above">2
+                        stars & above</label>
+                    <label for="rating4"><input type="radio" id="rating4" name="filter-rating" value="1 stars & above">1
+                        stars & above</label>
+                </div>
+                <div class="ap_filter-sort-by">
+                    <h4>Sort By</h4>
+                    <label for="sort-by1"><input type="radio" id="sort-by1" name="filter-sort-by"
+                            value="Price - Low to High">Price - Low to High</label>
+                    <label for="sort-by2"><input type="radio" id="sort-by2" name="filter-sort-by"
+                            value="Price - High to Low">Price - High to Low</label>
+                </div>
+                <button class="ap_filter-refresh-btn">Refresh</button>
+            </form>
+        </div>
+        <!-- main section sidebar ends here -->
+        <!-- main section products starts here -->
+        <div class="ap_main-section-products">
+            <div class="ap_product-listing">
+                <h4>
+                    Showing All Products
+                    <span class="ap_all-product-listing fw-1">(Showing 20 products)</span>
+                </h4>
+                <div class="ap_all-products">
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card-w-badge-type1 card-w-badge b-rad1">
+                        <div class="badge-type1 fw-4">New</div>
+                        <i class="far fa-heart"></i>
+
+                        <div class="card-w-badge-subcontainer1">
+                        </div>
+                        <div class="card-w-badge-subcontainer2">
+                            <div class="product-description">
+                                <div class="card-title fw-4">Nike</div>
+                                <div class="card-subtitle">Comfortable shoes for men</div>
+                            </div>
+                            <div class="card-product-price fw-3">
+                                <div>
+                                    <span class="p-mrp fw-1">1000</span>
+                                    <span class="p-discounted-price">₹900</span>
+                                </div>
+                                <div class="p-dicount">90% off</div>
+                            </div>
+                        </div>
+                        <div class="card-w-badge-subcontainer3">
+                            <button class="et_ss-btn action-color t-4 btn">Add To Cart</button>
+                            <button class="et_so-btn action-color t-4 btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main section products ends here -->
+    </div>
+    <!-- product-listing page ends here -->
+</body>
+
+</html>

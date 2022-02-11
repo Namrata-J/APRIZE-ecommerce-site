@@ -1,0 +1,122 @@
+@import url(/home/home-page.css);
+@import url(/css/base.css);
+
+body {
+    background-color: var(--most-lightest-gray);
+}
+
+/* myCart starts here */
+.ap_myCart-section h4 {
+    margin-top: 2rem;
+}
+.ap_myCart-items-list{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0rem;
+    width: 100%;
+}
+.ap_myCart-item{
+    align-items: flex-start;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.ap_myCart-product{
+    background-color: var(--white-color);
+    display: flex;
+    width: 27rem;
+}
+.ap_product-image img{
+    height: 100%;
+}
+.ap_product-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    width: 100%;
+}
+.ap_product-name h4{
+    margin-top: 0rem;
+}
+.ap_product-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.ap_product-price{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.ap_product-price span{
+    color: var(--medium-gray);
+    font-size: small;
+    text-decoration: line-through;
+}
+.ap_product-discount p{
+    color: var(--light-green);
+}
+.ap_product-quantity{
+    font-size: 0.7rem;
+}
+.ap_product-quantity span{
+    border: 1px solid var(--gray);
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.3rem;
+}
+.ap_product-quantity-btn{
+    border-radius: 50%;
+}
+.ap_product-quantity-btn:hover{
+    cursor: pointer;
+}
+.ap_product-action-btns{
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+}
+.ap_product-action-btns>*{
+    margin: 0.3rem;
+}
+.ap_myCart-product-price-details{
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    width: 20rem;
+}
+.ap_myCart-product-price-details h4{
+    border-bottom: 1px solid var(--medium-gray);
+    margin: 0rem;
+    padding: 0.5rem 0rem;
+}
+.ap_details-list{
+    border-bottom: 1px solid var(--medium-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.7rem 0rem;
+}
+.ap_details-list p{
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-between;
+}
+.ap_total-amount h4{
+    display: flex;
+    justify-content: space-between;
+}
+.ap_saving{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0rem 0rem 0rem;
+}
+/* myCart ends here */

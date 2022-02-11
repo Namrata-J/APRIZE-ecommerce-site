@@ -1,0 +1,76 @@
+@import url(/css/base.css);
+@import url(/home/home-page.css);
+
+body{
+    background-color: var(--most-lightest-gray);
+}
+
+.ap_logout-page-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.ap_logout-container{
+    background-color: var(--white-color);
+    padding: 1rem;
+    width: 20rem;
+}
+.ap_logout-first-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.et_circular-wbn-avatars{
+    position: relative;
+}
+.et_notifi-avatar-n{
+    position: absolute;
+    bottom: 0;
+    left: 63px;
+}
+.ap_logout-first-section p {
+    color: var(--medium-gray);
+    font-size: small;
+}
+.ap_logout-manage-account{
+    display: flex;
+    justify-content: center;
+}
+.ap_logout-manage-account p{
+    border: 1px solid var(--gray);
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
+.ap_logout-manage-account a{
+    color: var(--black);
+    text-decoration: none;
+}
+.ap_logout-first-section{
+    border-bottom: 1px solid var(--medium-gray);
+    padding-bottom: 1rem;
+}
+.ap_logout-second-section{
+    border-bottom: 1px solid var(--medium-gray);
+    padding: 0.5rem;
+}
+.ap_logout-second-section a{
+    color: var(--black);
+    text-decoration: none;
+}
+.ap_logout-second-section span{
+    font-size: larger;
+    padding-right: 0.5rem;
+}
+.ap_logout-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.ap_logout-btn a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.ap_logout-btn button{
+    background-color: var(--light-blue);
+}
