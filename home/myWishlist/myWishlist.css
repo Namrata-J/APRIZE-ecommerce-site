@@ -1,6 +1,6 @@
 @import url(/home/home-page.css);
 @import url(/css/base.css);
-@import url(/home/product-listing/product-listinng.css);
+@import url(/home/product-listing/product-listing.css);
 
 body{
     background-color: var(--most-lightest-gray);
